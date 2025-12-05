@@ -1,33 +1,206 @@
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+/* [::Built in::] Adapted from: Bearblog's default theme: https://bearblog.dev/ */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body, html {
+	padding: 1;
+	margin: 1;
+	height: 100%;
+	background-color: white;
+	position: relative;
+	font-size: 14px;
+	font-family: 'Courier New', monospace;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #89cd00;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+
+.page {
+	padding: 12px;
+	background-color: white;
+	min-height: 0;
+	height: unset;
+	padding-bottom: 36px;
+}
+
+.page h1:first-child {
+	margin-top: 0;
+}
+
+:root {
+  --width: 920px;
+  --font-main: Verdana, sans-serif;
+  --font-secondary: Verdana, sans-serif;
+  --font-scale: 1em;
+  --background-color: #fffcfa;
+  --heading-color: #555;
+  --text-color: #5b5656;
+  --link-color: #db9292;
+  --visited-color: #a386e3;
+  --code-background-color: #f2f2f2;
+  --code-color: #222;
+  --blockquote-color: #222;
+  --em-color: #5b5656c4;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: rgb(255, 255, 255);
+    --heading-color: #222222;
+    --text-color: #111111;
+    --link-color: #f4b690;
+    --visited-color: #c1a6ff;
+    --code-background-color: #000;
+    --code-color: #003cff;
+    --blockquote-color: #ccc;
+    --em-color: #fbfafac7;
+  }
+}
+
+body {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 14px;
+  margin: auto;
+  padding: 20px;
+  max-width: var(--width);
+  text-align: left;
+  background-color: var(--background-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Courier New', Courier, monospace;
+  color:hsl(from color h s l);
+}
+
+h1, h2, h3, h4 {
+	font-size: 14px;
+	text-transform: all;
+	letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 20px;
+	padding-left: 5px;
+}
+
+h2 {
+	border-left: 2px solid #ff0097;
+	padding-left: 4px;
+	margin-top: 2rem;
+}
+
+h4 {
+	color: black;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+
+h1#title {
+  line-height: 1.6;
+  border-bottom: dotted;
+}
+
+a {
+  color: var(--link-color);
   cursor: pointer;
+  text-decoration: underline;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
+a:hover {
+  text-decoration: wavy underline;
 }
 
-/* Add a background color and some padding around the form */
+strong,
+b {
+  color: var(--heading-color);
+}
+
+main {
+  line-height: 1.6;
+  border-bottom: dotted;
+  padding-bottom: 1.2em;
+}
+
+em,
+i {
+  color: var(--em-color);
+}
+
+hr {
+  border: 0;
+  border-top: 1px dashed;
+}
+
+code {
+  font-family: monospace;
+  padding: 2px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+}
+
+blockquote {
+  border-left: 1px solid #999;
+  color: var(--code-color);
+  padding-left: 20px;
+  font-style: italic;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.inline {
+  width: auto !important;
+}
+
+.highlight,
+.code {
+  padding: 1px 15px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  overflow-x: auto;
+}
+
+.sr-only {
+  display: none;
+}
+
+
+button {
+    border-style: var(--background-color);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 3px;
+    padding-top: 3px;
+    position: relative;
+} 
+
+
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: transparent;
   padding: 20px;
-}
+  align-items: center;
+
+} 
