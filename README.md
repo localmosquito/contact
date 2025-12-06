@@ -1,2 +1,1 @@
-In progress
-localmosquito.github.io/contact
+Website is in progress.
