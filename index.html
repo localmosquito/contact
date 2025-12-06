@@ -6,61 +6,50 @@
     <link rel="stylesheet" href="contact-style.css">
 
      <title>Contact me</title>
-
 </head>
 
 <body>
-    <div class="container">
-
+<div class="container">
     <main>
 
-             <img src="img/pleasev1.png" onmouseover="this.src= 'img/pleasev2.png';
-        "onmouseout="this.src='img/pleasev1.png';" alt="" width=80% height=40% >
 
+        <h1>Hi!</h1>
+        <h4>I'm no longer using instagram so please contact me using the form below if you don't already have my number!</h4>
+        <p class="text-right" style="text-align: right;">- Anh xoxo</p>
+      
+      
 
-        <h1>Hi there!</h1>
-        Due to my inability to reply to dm's and my hatred for *that app* I've made this form for you to use to contact me if you don't already have my number!
-        Please feel free to write to your heart's content any confessions/threats/enquiries that you might have and I will respond as soon as I can!
-<br><br>
-
+<div class="tv" id="tv1">
+      <div id="player"></div>
+      <div class="error-msg hide">
+        <div class="content">
     <form action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="ae397e62-933a-4554-8aea-ec0eea2e7468">
-  
         Your name 
         <br> 
-        <input placeholder="e.g. George"type="text" name="name" required style="width:40%; font-family: monospace;">
+        <input placeholder="e.g. Gary"type="text" name="name" required style="width:80%; font-family: 'DepartureMono'; color: white;">
+        <br>Contact details<br>
+        <input placeholder="phone/email/pigeon" type="text" name="contact" required style="width:80%; font-family: 'DepartureMono'; color: rgb(255, 255, 255)">
+        
         <br>
-
-        Contact details 
-        <br>
-        <input placeholder="phone/email/pigeon" type="text" name="contact" required style="width:40%; font-family: monospace;">
-        <br>
-
         <div class="input-container">
-        Message <br>
-        <textarea name="message" required placeholder="(plain text only)..." id="text" name="text" 
-        style="width: 100%; min-height: 150px; box-sizing: border-box; resize: vertical;" required></textarea>
+        Message <br> 
+        <textarea name="message" required placeholder="(plain text only)..." id="text" class="typing-effect" contenteditable="true" name="text" style="width: 80%; min-height: 150px; max-width: 560px; resize: vertical; " required></textarea>
         </div>
-
         <button type ="submit">
             <a href="submit" title="submit"></a>
-            <img src="img/submit.png" onmouseover="this.src= 'img/submit1.png';
-                "onmouseout="this.src='img/submit.png';" alt="" width="160" height="80">
+            <!-- <img src="img/submitxp.png" onmouseover="this.src= 'img/submitxp1.png';"onmouseout="this.src='img/submitxp.png';" alt="" width="160" height="80"> -->
+              <img id="ImSticky" src="img/button1.gif" onmouseover="this.src= 'img/button2.gif';"onmouseout="this.src='img/button1.gif';" style="width:20%; height: 20%; align-self: left;">
             </a>
         </button>
 
+ </div>
+    </div>
+    </div>
+
 
     </main>
-  
     </form>
-    </div>
+</div>
 </body>
-
 </html>
-
-
-
-
-
-
-
